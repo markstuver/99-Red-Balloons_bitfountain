@@ -72,9 +72,13 @@ class ViewController: UIViewController {
             currentIndexNumber++
             println("in If Statement: currentIndexNumber is: \(currentIndexNumber)")
 
+        } else {
+            
+            self.currentIndexNumber = randomNumber
         }
         
         println("After If Statement currentIndexNumber is: \(currentIndexNumber)")
+        
         switch currentIndexNumber {
         case 0:
             randomBackgroundImage = UIImage(named: "99redballoons.jpg")
@@ -90,7 +94,6 @@ class ViewController: UIViewController {
             println("Error has occurred in randomBalloonBackgroundImage Helper Function")
         }
         
-        self.currentIndexNumber = randomNumber
         
         return randomBackgroundImage
     }
